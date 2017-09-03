@@ -368,4 +368,7 @@ def generate_admin_links():
   if check_permission(Permissions.BIRTHDAYS):
     links.append(AdminLink('Birthday list',
       flask.url_for('birthdays.show_bdays', _external=True)))
+  if check_permission(Permissions.PERMISSION_MANAGER):
+    links.append(AdminLink('Permission manager',
+      flask.url_for('perm_mgr.show_permissions', _external=True)))
   return links

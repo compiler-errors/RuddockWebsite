@@ -23,6 +23,8 @@ class Permissions(enum.IntEnum):
   ROTATION = 5
   # See birthday list
   BIRTHDAYS = 7
+  # Manage office and user permissions
+  PERMISSION_MANAGER = 8
 
 # Enum for search modes.
 class MemberSearchMode(enum.IntEnum):

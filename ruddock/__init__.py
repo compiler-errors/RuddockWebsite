@@ -19,6 +19,7 @@ from ruddock.modules import auth
 from ruddock.modules import birthdays
 from ruddock.modules import government
 from ruddock.modules import hassle
+from ruddock.modules import perm_mgr
 from ruddock.modules import rotation
 from ruddock.modules import users
 
@@ -32,6 +33,7 @@ app.register_blueprint(auth.blueprint)
 app.register_blueprint(birthdays.blueprint, url_prefix="/birthdays")
 app.register_blueprint(government.blueprint, url_prefix="/government")
 app.register_blueprint(hassle.blueprint, url_prefix="/hassle")
+app.register_blueprint(perm_mgr.blueprint, url_prefix="/perm_mgr")
 app.register_blueprint(rotation.blueprint, url_prefix="/rotation")
 app.register_blueprint(users.blueprint, url_prefix="/users")
 
